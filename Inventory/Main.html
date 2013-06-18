@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Prueba</title>
+    <title>Base de datos Mauricio</title>
+    <script>
+        //Intento fallido de For Each
+        //TODO see what i did wrong in this one.
+        var items = new Array(1000);
+        items.add("Desktop PC");
+        items.add("laptop");
+        items.add(ïphone);
+        /*
+         function displayElement(element,index){
+         document.write("<li>" + element + "</li>");
+         }
+
+         function displayList(array){
+         document.write("<ul>");
+         array.foreach(displayElement);
+         document.write("</ul>");
+         }
+         */
+        //Forma basica de for loop
+        function displayList(array) {
+            document.write("<ul>");
+            for(var i=0;i<array.length;i++){
+                document.write(array[i]);
+            }
+            document.write("</ul>");
+        }
+
+    </script>
 </head>
 <body>
+<h1>Invetario</h1>
+<script>
+    //items=["Caca","Popo","Pussy"];
+    document.write("<ul> + " +
+            "<li>" +items[0]+"</li>" + "</ul>");
+    displayList(items);
+</script>
 
 </body>
 </html>
